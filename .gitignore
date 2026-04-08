@@ -1,3 +1,22 @@
+# Videos (contenido del usuario, no trackear)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.wmv
+*.flv
+
+# Thumbnails generados
+*.thumb.jpg
+
+# Output de edicion
+output/
+
+# Python
 __pycache__/
 *.pyc
-*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
