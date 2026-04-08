@@ -1,94 +1,84 @@
-# Editor de Videos para Redes Sociales
+# Editor de Videos Profesional para Redes Sociales
 
-Edita videos automaticamente para cualquier red social usando Claude Code + FFmpeg.
+Skill de Claude Code que convierte clips de video en contenido profesional listo para cualquier red social.
+
+## Que hace
+
+- Analiza tus videos (brillo, audio, escenas, silencios)
+- Te guia con preguntas profesionales (marca, tono, ritmo, colores)
+- Aplica color grading, textos, subtitulos, musica, transiciones
+- Exporta optimizado para cada plataforma (TikTok, Instagram, YouTube, Twitter, etc.)
 
 ## Requisitos
 
-- [FFmpeg](https://ffmpeg.org/) instalado en el sistema
-- Python 3.8+
-- Claude Code
-
-### Instalar FFmpeg
-
 ```bash
 # Ubuntu/Debian
-sudo apt-get install ffmpeg
+sudo apt install ffmpeg
 
 # macOS
 brew install ffmpeg
-
-# Windows (con Chocolatey)
-choco install ffmpeg
 ```
 
-## Uso
+Python 3.8+ (incluido en la mayoria de sistemas).
 
-### Con Claude Code (recomendado)
-
-Invoca la skill desde Claude Code:
+## Uso con Claude Code
 
 ```
 /project:edit-video /ruta/al/video.mp4
 ```
 
-Claude te guiara con preguntas interactivas para configurar la edicion.
+Claude te guiara paso a paso.
 
-### Desde la terminal
+## Uso desde terminal
 
 ```bash
-# Ver info del video
-python3 scripts/video_editor.py info mi_video.mp4
+# Info del video
+python3 scripts/video_editor.py info video.mp4
 
-# Ver plataformas disponibles
+# Analisis profundo (brillo, audio, escenas)
+python3 scripts/video_editor.py analyze video.mp4
+
+# Plataformas disponibles
 python3 scripts/video_editor.py platforms
 
-# Editar con archivo de configuracion
+# Generar thumbnail
+python3 scripts/video_editor.py thumbnail video.mp4
+
+# Concatenar clips con transicion
+python3 scripts/video_editor.py concat clip1.mp4 clip2.mp4 --output final.mp4 --transition crossfade
+
+# Editar con configuracion JSON
 python3 scripts/video_editor.py edit --config config.json
 ```
 
-### Ejemplo de archivo de configuracion
+## Funcionalidades
+
+- **Analisis**: deteccion de escenas, silencios, brillo, loudness (LUFS)
+- **Color grading**: vivid, warm, cool, vintage, cinematic, bw, moody, clean, high_energy
+- **Texto**: overlays con posicion, timing, colores corporativos, CTAs
+- **Subtitulos**: burn-in desde archivo SRT
+- **Logo/watermark**: con posicion, opacidad y escala configurables
+- **Audio**: normalizacion loudness, musica de fondo, control de volumen
+- **Transiciones**: crossfade, fade, wipe, slide, circle y 30+ opciones via xfade
+- **Efectos**: vineta, blur background, fade in/out, cambio de velocidad
+- **Multi-plataforma**: exporta simultaneamente para todas las redes sociales
+
+## Ejemplo de config JSON
 
 ```json
 {
-  "input": "mi_video.mp4",
-  "platforms": ["tiktok", "instagram_reels", "youtube_shorts"],
+  "input": "video.mp4",
+  "platforms": ["tiktok", "instagram_reels"],
   "output_dir": "./output",
-  "trim_start": 5.0,
-  "trim_end": 60.0,
-  "speed": 1.0,
-  "text_overlays": [
-    {
-      "text": "Sigueme!",
-      "y": "h-th-50",
-      "fontsize": 56,
-      "fontcolor": "white",
-      "box": true,
-      "show_from": 3,
-      "show_until": 8
-    }
-  ],
-  "remove_audio": false,
-  "brightness": 0.05,
-  "contrast": 1.1,
-  "saturation": 1.2,
+  "color_grade": "cinematic",
+  "text_overlays": [{"text": "Sigueme!", "position": "bottom", "fontsize": 56}],
+  "normalize_audio": true,
   "fade_in": 0.5,
-  "fade_out": 0.5
+  "fade_out": 0.5,
+  "vignette": true,
+  "generate_thumbnail": true
 }
 ```
-
-## Plataformas soportadas
-
-| Plataforma | Aspecto | Duracion max |
-|---|---|---|
-| TikTok | 9:16 | 10 min |
-| Instagram Reels | 9:16 | 3 min |
-| Instagram Stories | 9:16 | 60s |
-| Instagram Feed | 1:1 | 60s |
-| YouTube Shorts | 9:16 | 3 min |
-| YouTube (horizontal) | 16:9 | 12h |
-| Twitter/X | 9:16 | 2m20s |
-| Facebook Reels | 9:16 | 90s |
-| LinkedIn | 9:16 | 10 min |
 
 ## Licencia
 
