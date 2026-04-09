@@ -709,6 +709,89 @@
       "animated_blur_in": {
         "name": "Blur Animado (entrada)",
         "filter": "gblur=sigma='max(0,20-t*4)'"
+      },
+      "whip_pan_left": {
+        "name": "Whip Pan Left",
+        "filter": "crop=w=iw-60:h=ih:x='30+30*sin(t*20)':y=0",
+        "desc": "Barrido rapido izquierda con motion blur"
+      },
+      "whip_pan_right": {
+        "name": "Whip Pan Right",
+        "filter": "crop=w=iw-60:h=ih:x='30-30*sin(t*20)':y=0",
+        "desc": "Barrido rapido derecha"
+      },
+      "whip_pan_up": {
+        "name": "Whip Pan Up",
+        "filter": "crop=w=iw:h=ih-60:x=0:y='30+30*sin(t*20)'",
+        "desc": "Barrido rapido arriba"
+      },
+      "whip_pan_down": {
+        "name": "Whip Pan Down",
+        "filter": "crop=w=iw:h=ih-60:x=0:y='30-30*sin(t*20)'",
+        "desc": "Barrido rapido abajo"
+      },
+      "spin_clockwise": {
+        "name": "Spin Clockwise",
+        "filter": "rotate=a=t*PI:fillcolor=black",
+        "desc": "Giro horario"
+      },
+      "spin_counter": {
+        "name": "Spin Counter",
+        "filter": "rotate=a=-t*PI:fillcolor=black",
+        "desc": "Giro antihorario"
+      },
+      "zoom_spin": {
+        "name": "Zoom Spin",
+        "desc": "Zoom con giro simultaneo"
+      },
+      "bounce_warp": {
+        "name": "Bounce Warp",
+        "desc": "Efecto rebote con deformacion"
+      },
+      "stutter": {
+        "name": "Stutter",
+        "filter": "random=frames=5",
+        "desc": "Tartamudeo visual (frames aleatorios)"
+      },
+      "rumble_down": {
+        "name": "Rumble Down",
+        "filter": "crop=w=iw-20:h=ih-20:x='10+8*sin(t*30)':y='10+8*cos(t*25)'",
+        "desc": "Temblor intenso"
+      },
+      "blur_transition": {
+        "name": "Blur Transition",
+        "filter": "gblur=sigma='20*(1-min(t,1))'",
+        "desc": "Transicion con desenfoque"
+      },
+      "glitch_premiere_1": {
+        "name": "Glitch 1 (Premiere)",
+        "filter": "rgbashift=rh=15:bh=-15:edge=wrap",
+        "desc": "Glitch estilo Premiere"
+      },
+      "glitch_premiere_2": {
+        "name": "Glitch 2 (Premiere)",
+        "filter": "rgbashift=rh=-10:bh=10:rv=5:bv=-5:edge=smear",
+        "desc": "Glitch variante 2"
+      },
+      "warp_spin_cw": {
+        "name": "Warp Spin CW",
+        "desc": "Giro con deformacion horario"
+      },
+      "slide_down": {
+        "name": "Slide Down (Premiere)",
+        "desc": "Deslizamiento hacia abajo con inercia"
+      },
+      "slide_up": {
+        "name": "Slide Up (Premiere)",
+        "desc": "Deslizamiento hacia arriba con inercia"
+      },
+      "roll_in_cw": {
+        "name": "Roll In CW",
+        "desc": "Entrada rodando horario"
+      },
+      "roll_in_ccw": {
+        "name": "Roll In CCW",
+        "desc": "Entrada rodando antihorario"
       }
     }
   },
