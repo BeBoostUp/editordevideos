@@ -941,7 +941,256 @@
         "tick.wav",
         "tock.wav",
         "beep.wav"
-      ]
+      ],
+      "pro_whoosh": {
+        "pro_whoosh_base": {
+          "name": "Base Whoosh (Pro)",
+          "file": "sfx/pro_whoosh_base.wav",
+          "source": "user_library"
+        },
+        "pro_whoosh_cloth": {
+          "name": "Cloth Whoosh (Pro)",
+          "file": "sfx/pro_whoosh_cloth.wav",
+          "source": "user_library"
+        },
+        "pro_whoosh_deep": {
+          "name": "Deep Whoosh (Pro)",
+          "file": "sfx/pro_whoosh_deep.wav",
+          "source": "user_library"
+        },
+        "pro_whoosh_eerie": {
+          "name": "Eerie Whoosh (Pro)",
+          "file": "sfx/pro_whoosh_eerie.wav",
+          "source": "user_library"
+        },
+        "pro_whoosh_fast_deep": {
+          "name": "Fast Deep Whoosh (Pro)",
+          "file": "sfx/pro_whoosh_fast_deep.wav",
+          "source": "user_library"
+        },
+        "pro_whoosh_fast": {
+          "name": "Fast Whoosh (Pro)",
+          "file": "sfx/pro_whoosh_fast.wav",
+          "source": "user_library"
+        }
+      },
+      "glitch_pro": {
+        "glitch_2": {
+          "name": "Glitch 2",
+          "file": "sfx/glitch/glitch_2.wav",
+          "source": "user_library"
+        },
+        "glitch_3": {
+          "name": "Glitch 3",
+          "file": "sfx/glitch/glitch_3.wav",
+          "source": "user_library"
+        },
+        "glitch_4": {
+          "name": "Glitch 4",
+          "file": "sfx/glitch/glitch_4.wav",
+          "source": "user_library"
+        },
+        "glitch_5": {
+          "name": "Glitch 5",
+          "file": "sfx/glitch/glitch_5.wav",
+          "source": "user_library"
+        },
+        "glitch_6": {
+          "name": "Glitch 6",
+          "file": "sfx/glitch/glitch_6.wav",
+          "source": "user_library"
+        },
+        "glitch_7": {
+          "name": "Glitch 7",
+          "file": "sfx/glitch/glitch_7.wav",
+          "source": "user_library"
+        },
+        "glitch_8": {
+          "name": "Glitch 8",
+          "file": "sfx/glitch/glitch_8.wav",
+          "source": "user_library"
+        },
+        "glitch_9": {
+          "name": "Glitch 9",
+          "file": "sfx/glitch/glitch_9.wav",
+          "source": "user_library"
+        },
+        "glitch_10": {
+          "name": "Glitch 10",
+          "file": "sfx/glitch/glitch_10.wav",
+          "source": "user_library"
+        },
+        "glitch_11": {
+          "name": "Glitch 11",
+          "file": "sfx/glitch/glitch_11.wav",
+          "source": "user_library"
+        },
+        "glitch_12": {
+          "name": "Glitch 12",
+          "file": "sfx/glitch/glitch_12.wav",
+          "source": "user_library"
+        },
+        "glitch_13": {
+          "name": "Glitch 13",
+          "file": "sfx/glitch/glitch_13.wav",
+          "source": "user_library"
+        },
+        "glitch_14": {
+          "name": "Glitch 14",
+          "file": "sfx/glitch/glitch_14.wav",
+          "source": "user_library"
+        },
+        "glitch_15": {
+          "name": "Glitch 15",
+          "file": "sfx/glitch/glitch_15.wav",
+          "source": "user_library"
+        },
+        "glitch_16": {
+          "name": "Glitch 16",
+          "file": "sfx/glitch/glitch_16.wav",
+          "source": "user_library"
+        },
+        "glitch_17": {
+          "name": "Glitch 17",
+          "file": "sfx/glitch/glitch_17.wav",
+          "source": "user_library"
+        },
+        "glitch_18": {
+          "name": "Glitch 18",
+          "file": "sfx/glitch/glitch_18.wav",
+          "source": "user_library"
+        },
+        "glitch_19": {
+          "name": "Glitch 19",
+          "file": "sfx/glitch/glitch_19.wav",
+          "source": "user_library"
+        },
+        "glitch_20": {
+          "name": "Glitch 20",
+          "file": "sfx/glitch/glitch_20.wav",
+          "source": "user_library"
+        },
+        "glitch_21": {
+          "name": "Glitch 21",
+          "file": "sfx/glitch/glitch_21.wav",
+          "source": "user_library"
+        },
+        "glitch_22": {
+          "name": "Glitch 22",
+          "file": "sfx/glitch/glitch_22.wav",
+          "source": "user_library"
+        },
+        "glitch_23": {
+          "name": "Glitch 23",
+          "file": "sfx/glitch/glitch_23.wav",
+          "source": "user_library"
+        },
+        "glitch_24": {
+          "name": "Glitch 24",
+          "file": "sfx/glitch/glitch_24.wav",
+          "source": "user_library"
+        },
+        "glitch_25": {
+          "name": "Glitch 25",
+          "file": "sfx/glitch/glitch_25.wav",
+          "source": "user_library"
+        },
+        "glitch_26": {
+          "name": "Glitch 26",
+          "file": "sfx/glitch/glitch_26.wav",
+          "source": "user_library"
+        },
+        "glitch_27": {
+          "name": "Glitch 27",
+          "file": "sfx/glitch/glitch_27.wav",
+          "source": "user_library"
+        },
+        "glitch_28": {
+          "name": "Glitch 28",
+          "file": "sfx/glitch/glitch_28.wav",
+          "source": "user_library"
+        },
+        "glitch_29": {
+          "name": "Glitch 29",
+          "file": "sfx/glitch/glitch_29.wav",
+          "source": "user_library"
+        },
+        "glitch_30": {
+          "name": "Glitch 30",
+          "file": "sfx/glitch/glitch_30.wav",
+          "source": "user_library"
+        },
+        "glitch_31": {
+          "name": "Glitch 31",
+          "file": "sfx/glitch/glitch_31.wav",
+          "source": "user_library"
+        },
+        "glitch_32": {
+          "name": "Glitch 32",
+          "file": "sfx/glitch/glitch_32.wav",
+          "source": "user_library"
+        },
+        "glitch_33": {
+          "name": "Glitch 33",
+          "file": "sfx/glitch/glitch_33.wav",
+          "source": "user_library"
+        },
+        "glitch_34": {
+          "name": "Glitch 34",
+          "file": "sfx/glitch/glitch_34.wav",
+          "source": "user_library"
+        },
+        "glitch_35": {
+          "name": "Glitch 35",
+          "file": "sfx/glitch/glitch_35.wav",
+          "source": "user_library"
+        },
+        "glitch_36": {
+          "name": "Glitch 36",
+          "file": "sfx/glitch/glitch_36.wav",
+          "source": "user_library"
+        },
+        "glitch_37": {
+          "name": "Glitch 37",
+          "file": "sfx/glitch/glitch_37.wav",
+          "source": "user_library"
+        },
+        "glitch_38": {
+          "name": "Glitch 38",
+          "file": "sfx/glitch/glitch_38.wav",
+          "source": "user_library"
+        },
+        "glitch_39": {
+          "name": "Glitch 39",
+          "file": "sfx/glitch/glitch_39.wav",
+          "source": "user_library"
+        },
+        "glitch_40": {
+          "name": "Glitch 40",
+          "file": "sfx/glitch/glitch_40.wav",
+          "source": "user_library"
+        },
+        "glitch_41": {
+          "name": "Glitch 41",
+          "file": "sfx/glitch/glitch_41.wav",
+          "source": "user_library"
+        },
+        "glitch_42": {
+          "name": "Glitch 42",
+          "file": "sfx/glitch/glitch_42.wav",
+          "source": "user_library"
+        },
+        "glitch_43": {
+          "name": "Glitch 43",
+          "file": "sfx/glitch/glitch_43.wav",
+          "source": "user_library"
+        },
+        "glitch_44": {
+          "name": "Glitch 44",
+          "file": "sfx/glitch/glitch_44.wav",
+          "source": "user_library"
+        }
+      }
     }
   },
   "fonts": {
