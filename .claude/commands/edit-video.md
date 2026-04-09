@@ -161,6 +161,23 @@ Ajustes adicionales:
 
 ---
 
+## Image Overlay Best Practices (MANDATORY)
+
+When overlaying images on video:
+1. **Consistent position**: ALL images must be in the SAME position (default: centered horizontally and vertically)
+2. **Entry SFX**: Every image appearance MUST have a cinematic whoosh/reveal sound effect (pro_whoosh_cloth or similar)
+3. **Exit SFX**: Every image disappearance MUST have a softer whoosh out sound effect (whoosh_soft or similar)
+4. **SFX timing**: Entry SFX starts ~100ms BEFORE image appears. Exit SFX starts when image begins to fade out
+5. **Premium frames**: Images should have white rounded border frames for professional look
+6. **Before/After labels**: Composite images must include "ANTES" / "DESPUES" labels with pill-style backgrounds
+7. **Censorship**: Medical/sensitive images must have gaussian blur on private areas (nipples, genitals)
+8. **Never use -loop 1**: When overlaying still images with ffmpeg filter_complex, do NOT use -loop 1 flag - it causes rendering issues
+9. **Contextual placement**: Images appear at moments where the narration references what the image shows
+
+These are NON-NEGOTIABLE patterns that should be applied automatically whenever images are part of the edit. The editor should NOT need to be told these things explicitly.
+
+---
+
 ## FASE 8: Output
 
 - Logo/marca de agua (posicion, opacidad, tamano)
